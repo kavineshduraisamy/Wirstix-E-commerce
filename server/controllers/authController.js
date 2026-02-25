@@ -18,13 +18,14 @@ async function loginUser(req, res) {
             return res.status(403).json({ message: 'User is blocked' });
         }
 
-        generateToken(res, user._id);
+        const token = generateToken(res, user._id);
 
         res.json({
             _id: user._id,
             name: user.name,
             email: user.email,
             role: user.role,
+            token,
         });
 
     } catch (error) {
@@ -55,13 +56,14 @@ async function registerUser(req, res) {
             return res.status(400).json({ message: 'Invalid user data' });
         }
 
-        generateToken(res, user._id);
+        const token = generateToken(res, user._id);
 
         res.status(201).json({
             _id: user._id,
             name: user.name,
             email: user.email,
             role: user.role,
+            token,
         });
 
     } catch (error) {

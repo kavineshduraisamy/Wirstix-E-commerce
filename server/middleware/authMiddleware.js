@@ -6,7 +6,14 @@ async function protect(req, res, next) {
 
 
     try {
-        const token = req.cookies.jwt;
+        let token;
+
+        // Check for token in headers or cookies
+        if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
+            token = req.headers.authorization.split(' ')[1];
+        } else {
+            token = req.cookies.jwt;
+        }
 
         if (!token) {
             return res.status(401).json({ message: 'Not authorized, no token' });
