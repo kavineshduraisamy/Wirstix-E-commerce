@@ -4,17 +4,7 @@ import multer from 'multer';
 
 const router = express.Router();
 
-const storage = multer.diskStorage({
-    destination(req, file, cb) {
-        cb(null, 'uploads/');
-    },
-    filename(req, file, cb) {
-        cb(
-            null,
-            `${file.fieldname}-${Date.now()}${path.extname(file.originalname)}`
-        );
-    },
-});
+const storage = multer.memoryStorage();
 
 function checkFileType(file, cb) {
     const filetypes = /jpg|jpeg|png/;
@@ -36,9 +26,16 @@ const upload = multer({
 });
 
 router.post('/', upload.single('image'), (req, res) => {
+    if (!req.file) {
+        return res.status(400).send({ message: 'Please upload an image' });
+    }
+
+    const base64Image = req.file.buffer.toString('base64');
+    const dataUri = `data:${req.file.mimetype};base64,${base64Image}`;
+
     res.send({
-        message: 'Image Uploaded',
-        image: `/${req.file.path.replace(/\\/g, '/')}`,
+        message: 'Image Uploaded to Database',
+        image: dataUri,
     });
 });
 
