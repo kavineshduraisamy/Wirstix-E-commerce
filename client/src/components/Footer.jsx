@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container mx-auto px-4 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 text-left mb-20">
                 {/* Brand */}
                 <div className="md:col-span-1">
-                    <span className="text-2xl font-accent font-black tracking-tighter text-secondary uppercase">TimeLux</span>
+                    <span className="text-2xl font-accent font-black tracking-tighter text-secondary uppercase">Wristix</span>
                     <p className="text-sm font-light leading-relaxed">
                         Experience precision and elegance. Our curated collection of luxury timepieces is designed for those who value timeless craftsmanship.
                     </p>
@@ -49,7 +49,7 @@ const Footer = () => {
 
             <div className="bg-black text-[#f2f2f2] py-10">
                 <div className="container mx-auto px-4 lg:px-12 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-                    <p className="text-[10px] uppercase font-bold tracking-widest text-gray-400">&copy; {currentYear} TimeLux. All Rights Reserved.</p>
+                    <p className="text-[10px] uppercase font-bold tracking-widest text-gray-400">&copy; {currentYear} Wristix. All Rights Reserved.</p>
                     <div className="flex space-x-10">
                         <a href="#" className="text-gray-400 hover:text-primary transition transform hover:scale-110">
                             <Facebook size={18} strokeWidth={1.5} />

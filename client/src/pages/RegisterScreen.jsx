@@ -58,7 +58,7 @@ const RegisterScreen = () => {
     return (
         <FormContainer>
             <div className="text-center mb-12">
-                <span className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.3em] mb-4 block">Maison TimeLux</span>
+                <span className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.3em] mb-4 block">Maison Wristix</span>
                 <h1 className="text-4xl font-accent font-medium text-secondary mb-3 italic">Create Account</h1>
                 <p className="text-gray-400 font-light text-[11px] uppercase tracking-widest">Experience luxury timepieces</p>
             </div>

@@ -16,7 +16,7 @@ const HomeScreen = () => {
     return (
         <div className="pb-20">
             <Helmet>
-                <title>TimeLux | Premium Watches</title>
+                <title>Wristix | Premium Watches</title>
                 <meta name="description" content="Discover luxury timepieces" />
             </Helmet>
 

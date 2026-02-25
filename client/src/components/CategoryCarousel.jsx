@@ -74,7 +74,7 @@ const CategoryCarousel = ({ category }) => {
             {
                 image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80',
                 title: 'Explore the Collection',
-                subtitle: 'Discover the world of TimeLux luxury'
+                subtitle: 'Discover the world of Wristix luxury'
             }
         ]
     };

@@ -50,7 +50,7 @@ const ProductScreen = () => {
     return (
         <div className="container mx-auto px-4 lg:px-12 py-10">
             <Helmet>
-                <title>{product?.name || 'Loading'} | TimeLux</title>
+                <title>{product?.name || 'Loading'} | Wristix</title>
                 <meta name="description" content={product?.description || 'Discover luxury timepieces'} />
             </Helmet>
 

@@ -71,7 +71,7 @@ const UserEditScreen = () => {
                             <ShieldCheck className="w-24 h-24" />
                         </div>
                         <h1 className="text-2xl font-accent font-bold tracking-tight">Access Control</h1>
-                        <p className="text-gray-400 mt-1 font-sans text-sm">Managing authorization levels for TimeLux members</p>
+                        <p className="text-gray-400 mt-1 font-sans text-sm">Managing authorization levels for Wristix members</p>
                     </div>
 
                     <div className="p-8 md:p-12">

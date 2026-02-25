@@ -50,7 +50,7 @@ const LoginScreen = () => {
     return (
         <FormContainer>
             <div className="text-center mb-12">
-                <span className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.3em] mb-4 block">Maison TimeLux</span>
+                <span className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.3em] mb-4 block">Maison Wristix</span>
                 <h1 className="text-4xl font-accent font-medium text-secondary mb-3 italic">Welcome Back</h1>
                 <p className="text-gray-400 font-light text-[11px] uppercase tracking-widest">Sign in to your account</p>
             </div>
@@ -119,7 +119,7 @@ const LoginScreen = () => {
             </form>
 
             <div className="mt-10 pt-8 border-t border-gray-100 text-center text-sm">
-                <span className="text-gray-500 font-light italic">New to TimeLux?</span>{' '}
+                <span className="text-gray-500 font-light italic">New to Wristix?</span>{' '}
                 <Link to={redirect ? `/register?redirect=${redirect}` : '/register'} className="text-primary font-bold hover:underline ml-1">
                     Create an Account
                 </Link>

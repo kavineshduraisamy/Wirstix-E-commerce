@@ -252,7 +252,7 @@ const OrderScreen = () => {
 
                         <p className="mt-8 text-[10px] text-center text-gray-400 uppercase tracking-widest leading-relaxed">
                             Order protected by<br />
-                            TimeLux Secure Transaction
+                            Wristix Secure Transaction
                         </p>
                     </div>
                 </div>

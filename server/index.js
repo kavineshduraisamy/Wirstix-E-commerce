@@ -21,6 +21,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({
     origin: 'http://localhost:3000',
+    // origin: true,
     credentials: true,
 }));
 app.use(helmet());
@@ -44,7 +45,7 @@ app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 // app.use('/api/payment', paymentRoutes);
 
 app.get('/', (req, res) => {
-    res.send('TimeLux API is running...');
+    res.send('Wristix API is running...');
 });
 
 
@@ -57,3 +58,6 @@ connectDB().then(() => {
         console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
     });
 });
+connectDB();
+
+export default app;

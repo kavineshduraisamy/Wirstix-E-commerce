@@ -21,7 +21,7 @@ const ErrorScreen = () => {
                     <div className="space-y-4">
                         <h1 className="text-4xl font-accent font-medium text-secondary italic">Something went wrong</h1>
                         <p className="text-gray-500 font-light leading-relaxed">
-                            {error.statusText || error.message || "We encountered an unexpected error while navigating TimeLux."}
+                            {error.statusText || error.message || "We encountered an unexpected error while navigating Wristix."}
                         </p>
                     </div>
 

@@ -32,8 +32,8 @@ const Navbar = () => {
     return (
         <nav className="bg-white text-secondary border-b border-gray-100 shadow-sm sticky top-0 z-50">
             {/* Top Bar */}
-            <div className="bg-[#000000] text-[#f2f2f2] text-[10px] py-1.5 text-center font-medium">
-                GET THE BEST LUXURY WATCHES AT TIMELUX
+            <div className="bg-[#000000] text-[#f2f2f2] text-[10px] py-1.5 text-center font-medium uppercase">
+                GET THE BEST LUXURY WATCHES AT Wristix
             </div>
 
             <div className="container mx-auto px-4 lg:px-12">
@@ -41,7 +41,7 @@ const Navbar = () => {
                     {/* Logo (Left) */}
                     <div className="flex-shrink-0">
                         <Link to="/" className="flex items-center space-x-1">
-                            <span className="text-3xl font-accent font-black text-secondary uppercase">TimeLux</span>
+                            <span className="text-3xl font-accent font-black text-secondary uppercase">Wristix</span>
                         </Link>
                     </div>
 

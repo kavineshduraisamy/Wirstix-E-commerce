@@ -23,7 +23,7 @@ const ShopScreen = () => {
     return (
         <div className="pb-20">
             <Helmet>
-                <title>{category ? `${category} | TimeLux` : 'Shop | TimeLux'}</title>
+                <title>{category ? `${category} | Wristix` : 'Shop | Wristix'}</title>
             </Helmet>
 
             <CategoryCarousel category={category} />

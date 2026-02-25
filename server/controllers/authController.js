@@ -28,6 +28,7 @@ async function loginUser(req, res) {
         });
 
     } catch (error) {
+    console.log("error ==> ", error);
         res.status(500).json({ message: error.message });
     }
 }
