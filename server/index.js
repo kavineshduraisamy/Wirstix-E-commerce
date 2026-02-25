@@ -48,8 +48,8 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/upload", uploadRoutes);
 app.use("/api/stats", statsRoutes);
 
-const __dirname = path.resolve();
-app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
+// const __dirname = path.resolve();
+// app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
 
 // app.use('/api/payment', paymentRoutes);
 
@@ -57,10 +57,10 @@ app.get("/", (req, res) => {
   res.send("Wristix API is running...");
 });
 
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-  console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
+// });
 
 export default app;
