@@ -31,7 +31,7 @@ const Navbar = () => {
 
     return (
         <nav className="bg-white text-secondary border-b border-gray-100 shadow-sm sticky top-0 z-50">
-            {/* Top Bar */}
+    
             <div className="bg-[#000000] text-[#f2f2f2] text-[10px] py-1.5 text-center font-medium uppercase">
                 GET THE BEST LUXURY WATCHES AT Wristix
             </div>

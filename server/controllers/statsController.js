@@ -2,9 +2,7 @@ import Order from '../models/orderModel.js';
 import User from '../models/userModel.js';
 import Product from '../models/productModel.js';
 
-// @desc    Get dashboard statistics
-// @route   GET /api/stats
-// @access  Private/Admin
+
 const getDashboardStats = async (req, res) => {
     try {
         const productsCount = await Product.countDocuments();

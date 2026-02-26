@@ -1,14 +1,11 @@
 import jwt from 'jsonwebtoken';
 import User from '../models/userModel.js';
 
-// Protect routes
 async function protect(req, res, next) {
 
 
     try {
         let token;
-
-        // Check for token in headers or cookies
         if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
             token = req.headers.authorization.split(' ')[1];
         } else {
@@ -39,7 +36,6 @@ async function protect(req, res, next) {
 }
 
 
-// Admin middleware
 function admin(req, res, next) {
     if (req.user && req.user.role === 'admin') {
         return next();

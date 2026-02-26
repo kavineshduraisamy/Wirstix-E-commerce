@@ -23,7 +23,12 @@ app.use(express.urlencoded({ limit: "30mb", extended: true }));
 
 app.use(
   cors({
-    origin: true, // Reflect the request origin
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:3333",
+      "https://wristix-server.vercel.app",
+      "https://wristix.vercel.app", // Add your frontend production URL here
+    ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],

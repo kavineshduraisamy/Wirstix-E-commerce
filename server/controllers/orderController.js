@@ -1,8 +1,6 @@
 import Order from '../models/orderModel.js';
 
-// @desc    Create new order
-// @route   POST /api/orders
-// @access  Private
+
 async function addOrderItems(req, res) {
     try {
         const {
@@ -43,9 +41,7 @@ async function addOrderItems(req, res) {
     }
 }
 
-// @desc    Get order by ID
-// @route   GET /api/orders/:id
-// @access  Private
+
 async function getOrderById(req, res) {
     try {
         const order = await Order.findById(req.params.id).populate(
@@ -64,9 +60,7 @@ async function getOrderById(req, res) {
     }
 }
 
-// @desc    Update order to paid
-// @route   PUT /api/orders/:id/pay
-// @access  Private
+
 async function updateOrderToPaid(req, res) {
     try {
         const order = await Order.findById(req.params.id);
@@ -93,9 +87,6 @@ async function updateOrderToPaid(req, res) {
     }
 }
 
-// @desc    Update order to delivered
-// @route   PUT /api/orders/:id/deliver
-// @access  Private/Admin
 async function updateOrderToDelivered(req, res) {
     try {
         const order = await Order.findById(req.params.id);
@@ -116,9 +107,7 @@ async function updateOrderToDelivered(req, res) {
     }
 }
 
-// @desc    Get logged in user orders
-// @route   GET /api/orders/myorders
-// @access  Private
+
 async function getMyOrders(req, res) {
     try {
         const orders = await Order.find({ user: req.user._id });
@@ -129,9 +118,7 @@ async function getMyOrders(req, res) {
     }
 }
 
-// @desc    Get all orders
-// @route   GET /api/orders
-// @access  Private/Admin
+
 async function getOrders(req, res) {
     try {
         const orders = await Order.find({}).populate('user', 'id name');

@@ -1,9 +1,6 @@
 import User from '../models/userModel.js';
 import generateToken from '../utils/generateToken.js';
 
-// @desc    Auth user & get token
-// @route   POST /api/users/login
-// @access  Public
 async function loginUser(req, res) {
     try {
         const { email, password } = req.body;
@@ -33,9 +30,6 @@ async function loginUser(req, res) {
     }
 }
 
-// @desc    Register a new user
-// @route   POST /api/users
-// @access  Public
 async function registerUser(req, res) {
     try {
         const { name, email, password } = req.body;
@@ -71,9 +65,6 @@ async function registerUser(req, res) {
     }
 }
 
-// @desc    Logout user / clear cookie
-// @route   POST /api/users/logout
-// @access  Private
 async function logoutUser(req, res) {
     try {
         res.cookie('jwt', '', {

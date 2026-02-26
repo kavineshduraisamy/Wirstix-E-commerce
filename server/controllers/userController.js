@@ -1,8 +1,6 @@
 import User from '../models/userModel.js';
 
-// @desc    Get user profile
-// @route   GET /api/users/profile
-// @access  Private
+
 async function getUserProfile(req, res) {
     try {
         const user = await User.findById(req.user._id);
@@ -24,9 +22,6 @@ async function getUserProfile(req, res) {
 }
 
 
-// @desc    Update user profile
-// @route   PUT /api/users/profile
-// @access  Private
 async function updateUserProfile(req, res) {
     try {
         const user = await User.findById(req.user._id);

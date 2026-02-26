@@ -1,8 +1,6 @@
 import Product from '../models/productModel.js';
 
-// @desc    Fetch all products
-// @route   GET /api/products
-// @access  Public
+
 async function getProducts(req, res) {
   try {
     const pageSize = 8;
@@ -37,9 +35,6 @@ async function getProducts(req, res) {
 }
 
 
-// @desc    Fetch single product
-// @route   GET /api/products/:id
-// @access  Public
 async function getProductById(req, res) {
   try {
     const product = await Product.findById(req.params.id);

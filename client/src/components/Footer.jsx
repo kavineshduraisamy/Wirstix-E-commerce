@@ -6,15 +6,12 @@ const Footer = () => {
     return (
         <footer className="bg-white text-gray-500 pt-20 mt-auto border-t border-gray-100 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.03)]">
             <div className="container mx-auto px-4 lg:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 text-left mb-20">
-                {/* Brand */}
                 <div className="md:col-span-1">
                     <span className="text-2xl font-accent font-black tracking-tighter text-secondary uppercase">Wristix</span>
                     <p className="text-sm font-light leading-relaxed">
                         Experience precision and elegance. Our curated collection of luxury timepieces is designed for those who value timeless craftsmanship.
                     </p>
                 </div>
-
-                {/* Collections */}
                 <div>
                     <h4 className="text-[11px] font-bold text-secondary uppercase tracking-[0.2em] mb-6">Collections</h4>
                     <ul className="space-y-3 text-sm font-light">
@@ -24,8 +21,6 @@ const Footer = () => {
                         <li><a href="/shop?category=Premium" className="hover:text-primary transition">Premium Brands</a></li>
                     </ul>
                 </div>
-
-                {/* Customer Service */}
                 <div>
                     <h4 className="text-[11px] font-bold text-secondary uppercase tracking-[0.2em] mb-6">Support</h4>
                     <ul className="space-y-3 text-sm font-light">
@@ -35,8 +30,6 @@ const Footer = () => {
                         <li><a href="/contact" className="hover:text-primary transition">Contact Us</a></li>
                     </ul>
                 </div>
-
-                {/* Newsletter */}
                 <div>
                     <h4 className="text-[11px] font-bold text-secondary uppercase tracking-[0.2em] mb-6">Newsletter</h4>
                     <p className="text-xs font-light mb-4">Subscribe to receive updates, access to exclusive deals, and more.</p>
@@ -46,7 +39,6 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-
             <div className="bg-black text-[#f2f2f2] py-10">
                 <div className="container mx-auto px-4 lg:px-12 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
                     <p className="text-[10px] uppercase font-bold tracking-widest text-gray-400">&copy; {currentYear} Wristix. All Rights Reserved.</p>

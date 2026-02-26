@@ -2,9 +2,7 @@ import Stripe from 'stripe';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-// @desc    Create Stripe Payment Intent
-// @route   POST /api/payment/create-payment-intent
-// @access  Private
+
 async function createPaymentIntent(req, res) {
     try {
         const { amount } = req.body;
@@ -30,9 +28,7 @@ async function createPaymentIntent(req, res) {
     }
 }
 
-// @desc    Send Stripe Public Key
-// @route   GET /api/payment/config
-// @access  Private
+
 async function sendStripeConfig(req, res) {
     try {
         res.send({
