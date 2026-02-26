@@ -27,7 +27,8 @@ app.use(
       "http://localhost:3000",
       "http://localhost:3333",
       "https://wristix-server.vercel.app",
-      "https://wristix.vercel.app", // Add your frontend production URL here
+      "https://wristix.vercel.app",
+      /\.vercel\.app$/, // Allow all vercel subdomains for convenience during preview/prod
     ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
